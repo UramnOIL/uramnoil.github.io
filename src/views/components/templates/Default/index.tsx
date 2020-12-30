@@ -1,15 +1,17 @@
 import React from "react";
 import styled from "styled-components";
 import { Header } from "src/views/components/organisms/Header";
-import { MainContainer } from "src/views/components/organisms/MainContainer";
+import { MainContainer, MainContainerProps } from "src/views/components/organisms/MainContainer";
 import { Footer } from "src/views/components/organisms/Footer";
 
-const Default = () => {
+const Default = ({ children }: MainContainerProps) => {
   return (
     <Wrapper>
       <InnerWrapper>
         <Header />
-        <MainContainer />
+        <MainContainer>
+          { children }
+        </MainContainer>
       </InnerWrapper>
       <Footer />
     </Wrapper>

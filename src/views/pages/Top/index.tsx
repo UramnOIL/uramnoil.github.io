@@ -3,6 +3,14 @@ import Default from "src/views/components/templates/Default";
 
 export const Top = () => {
   return (
-    <Default />
+    <Default>
+      <>
+        <h1>Sample</h1>
+        hoge
+        <section>
+          <h2>HogeHoge</h2>
+        </section>
+      </>
+    </Default>
   )
 }

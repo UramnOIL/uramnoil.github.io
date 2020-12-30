@@ -3,18 +3,14 @@ import React from "react";
 import { Main } from "src/views/components/organisms/Main";
 
 export interface MainContainerProps {
-  children: React.ReactChildren
+  children: React.ReactChild
 }
 
-export const MainContainer = () => {
+export const MainContainer = ({ children }: MainContainerProps) => {
   return (
     <Wrapper>
       <Main>
-        <h1>Sample</h1>
-        hoge
-        <section>
-          <h2>HogeHoge</h2>
-        </section>
+        { children }
       </Main>
     </Wrapper>
   )
