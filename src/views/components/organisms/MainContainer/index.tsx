@@ -6,7 +6,7 @@ export interface MainContainerProps {
   children: React.ReactChild
 }
 
-export const MainContainer = ({ children }: MainContainerProps) => {
+export const MainContainer: React.FC<MainContainerProps> = ({ children }) => {
   return (
     <Wrapper>
       <Main>

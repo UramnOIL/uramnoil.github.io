@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Footer = () => {
+export const Footer: React.FC = () => {
   return (
     <Wrapper>
       <a>© 2007 UramnOIL</a>

@@ -20,8 +20,4 @@ const Wrapper = styled.li`
   text-align: center;
   
   flex-grow: 1;
-  
-  &+ li {
-    border-left: 1px solid #333;
-  }
 `

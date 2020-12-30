@@ -4,7 +4,9 @@ import { Header } from "src/views/components/organisms/Header";
 import { MainContainer, MainContainerProps } from "src/views/components/organisms/MainContainer";
 import { Footer } from "src/views/components/organisms/Footer";
 
-const Default = ({ children }: MainContainerProps) => {
+type DefaultProps = MainContainerProps
+
+const Default:React.FC<DefaultProps> = ({ children }) => {
   return (
     <Wrapper>
       <InnerWrapper>
